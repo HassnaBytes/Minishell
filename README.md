@@ -81,4 +81,3 @@ Here are some specific details about how these concepts are implemented in our m
 
 5. **Environment Management**: We maintain an internal copy of the environment, which we modify with our export and unset built-ins.
 
-[Remaining sections: Key Learnings, Future Improvements, Contributors, License]
