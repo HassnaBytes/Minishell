@@ -81,3 +81,73 @@ Here are some specific details about how these concepts are implemented in our m
 
 5. **Environment Management**: We maintain an internal copy of the environment, which we modify with our export and unset built-ins.
 
+## Project Development Process
+
+Here's an overview of how we approached and developed our minishell project:
+
+1. **Project Planning and Research**
+   - Thoroughly read the project requirements and bash manual
+   - Researched UNIX processes, signals, and file descriptors
+   - Outlined the main components of the shell
+
+2. **Setting Up the Development Environment**
+   - Created the project repository
+   - Set up a Makefile for compilation
+   - Established a basic project structure (directories for source files, headers, etc.)
+
+3. **Implementing Basic Shell Loop**
+   - Created a main loop to continuously prompt for and read user input
+   - Implemented basic command execution for single commands without arguments
+
+4. **Developing the Parser**
+   - Designed and implemented a lexer to tokenize input
+   - Created a parser to interpret the tokens and build a command structure
+
+5. **Expanding Command Execution**
+   - Implemented execution of commands with arguments
+   - Added support for executing programs in PATH
+
+6. **Implementing Built-in Commands**
+   - Developed each built-in command (cd, echo, pwd, export, unset, env, exit)
+   - Integrated built-ins into the main execution flow
+
+7. **Adding Support for Pipes and Redirections**
+   - Implemented input/output redirections (<, >, >>)
+   - Added support for pipes (|) between commands
+
+8. **Environment Variable Handling**
+   - Created functions to manage environment variables
+   - Implemented variable expansion in commands
+
+9. **Signal Handling**
+   - Added custom signal handlers for SIGINT, SIGQUIT, and SIGCHLD
+
+10. **Quote Handling and Escape Characters**
+    - Enhanced the parser to properly handle single quotes, double quotes, and escape characters
+
+11. **Error Handling and Edge Cases**
+    - Implemented comprehensive error checking
+    - Handled various edge cases discovered during testing
+
+12. **Memory Management**
+    - Conducted thorough memory leak checks
+    - Implemented proper memory allocation and deallocation throughout the project
+
+13. **Testing and Debugging**
+    - Developed a comprehensive test suite
+    - Debugged issues uncovered during testing
+
+14. **Code Refactoring and Optimization**
+    - Refactored code for better readability and maintainability
+    - Optimized performance where possible
+
+15. **Documentation**
+    - Wrote inline comments explaining complex parts of the code
+    - Created this README to document the project
+
+16. **Final Review and Submission**
+    - Conducted a final code review
+    - Ensured compliance with 42 School's norminette style guide
+    - Submitted the project for evaluation
+
+Throughout the development process, we adhered to best practices in C programming, followed the project guidelines closely, and regularly committed our changes to version control.
